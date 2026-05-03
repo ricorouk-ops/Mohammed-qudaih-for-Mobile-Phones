@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#2a2a28",
+                    "secondary-container": "#9f0221",
+                    "secondary-fixed": "#ffdad8",
+                    "inverse-primary": "#55624a",
+                    "surface-container-lowest": "#0e0e0d",
+                    "on-secondary-fixed": "#410007",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "primary-container": "#2d3924",
+                    "on-tertiary": "#2f3131",
+                    "primary-fixed": "#d9e7c9",
+                    "on-tertiary-container": "#9e9f9f",
+                    "surface-bright": "#393937",
+                    "secondary-fixed-dim": "#ffb3b1",
+                    "on-error": "#690005",
+                    "inverse-surface": "#e4e2de",
+                    "on-secondary-container": "#ffa8a6",
+                    "tertiary-container": "#343636",
+                    "on-primary-fixed": "#131f0c",
+                    "on-error-container": "#ffdad6",
+                    "surface-tint": "#bdcbae",
+                    "on-primary-container": "#95a387",
+                    "on-secondary": "#680012",
+                    "tertiary": "#c6c6c7",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "surface-container": "#1f201e",
+                    "error-container": "#93000a",
+                    "surface-container-highest": "#353533",
+                    "inverse-on-surface": "#30312e",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-surface": "#e4e2de",
+                    "surface-variant": "#353533",
+                    "primary": "#bdcbae",
+                    "outline": "#8f9289",
+                    "on-primary": "#28341f",
+                    "secondary": "#ffb3b1",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-primary-fixed-variant": "#3e4a34",
+                    "background": "#131412",
+                    "surface": "#131412",
+                    "on-surface-variant": "#c5c8bd",
+                    "on-secondary-fixed-variant": "#92001d",
+                    "on-background": "#e4e2de",
+                    "surface-container-low": "#1b1c1a",
+                    "primary-fixed-dim": "#bdcbae",
+                    "error": "#ffb4ab",
+                    "surface-dim": "#131412",
+                    "outline-variant": "#454840"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "16px",
+                    "container-margin": "20px",
+                    "xl": "40px",
+                    "unit": "4px",
+                    "sm": "8px",
+                    "lg": "24px",
+                    "xs": "4px",
+                    "gutter": "12px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Space Grotesk"],
+                    "body-md": ["Inter"],
+                    "label-caps": ["Space Grotesk"],
+                    "display-xl": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "headline-lg": ["24px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                    "display-xl": ["40px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .tatreez-pattern {
+            background-image: radial-gradient(circle at 2px 2px, #9f0221 1px, transparent 0);
+            background-size: 8px 8px;
+            opacity: 0.15;
+        }
+        .glass-card {
+            background: rgba(42, 42, 40, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-accent {
+            box-shadow: 0 0 30px rgba(159, 2, 33, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-container selection:text-white overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="bg-[#2D3924]/80 backdrop-blur-md fixed top-0 z-50 w-full border-b border-white/10 shadow-[0_0_20px_rgba(45,57,36,0.5)]">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="text-xl font-bold text-white uppercase tracking-widest font-['Space_Grotesk']">
+                AL-QUDS TECH 2026
+            </div>
+<nav class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] tracking-tight">
+<a class="text-gray-400 hover:text-white transition-colors" href="#">الرئيسية</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">المتجر</a>
+<a class="text-red-500 font-bold border-b-2 border-red-500 pb-1" href="#">عن المتجر</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">التراث</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">الدعم</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-white/5 transition-all duration-300 rounded-full active:scale-95 opacity-80">
+<span class="material-symbols-outlined text-white" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="p-2 hover:bg-white/5 transition-all duration-300 rounded-full active:scale-95 opacity-80">
+<span class="material-symbols-outlined text-white" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center justify-center overflow-hidden px-container-margin">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-primary-container/20 to-surface z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A futuristic and cinematic wide shot of the Old City of Jerusalem reimagined in 2026 with holographic interfaces floating over ancient stone arches. The lighting is a moody deep olive and crimson red sunset, creating a high-contrast atmosphere. Translucent circuit patterns are overlaid on the historic textures, blending heritage with ultra-modern digital aesthetics in a professional architectural visualization style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc4PosnW519Iadto1vZ0L5zTSArQ0Vx2XLufDg39M1liD7cHiP1p04DryutMF8vLPwVqbuUY6_yQVyV2ddDae-br8IfexPa8KJl4pKnWTtTqLLgTyAKfC448OZuezWC-3XnLySLIM9QEtOntORKOyN7wIG98f3wEg9lXAWkiWlvZaPYZ7SL5qtNpj3FBD4PtyqDP4zt9DAN_8L8uggqkpaDLIRc_Y3jAeaDDZ-S3HT1WBxB-kcqynWwLR-mJsQKaWJhdnUjuKaFnQ"/>
+</div>
+<div class="relative z-20 text-center max-w-4xl mx-auto">
+<div class="inline-block px-4 py-1 mb-6 rounded-full bg-secondary-container/20 border border-secondary-container/30 text-secondary-container font-label-caps text-label-caps">
+                    مستقبل التراث
+                </div>
+<h1 class="font-display-xl text-display-xl text-white mb-6 leading-tight">
+                    جذور أصيلة، <br/>
+<span class="text-secondary-container">تقنية مستحيلة</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                    نحن لا نصنع مجرد هواتف؛ نحن نبني جسراً رقمياً يربط بين عراقة الأرض وابتكار المستقبل. في عام 2026، تصبح الهوية الفلسطينية هي المحرك الأول لأرقى أنواع التكنولوجيا العالمية.
+                </p>
+<div class="mt-10 flex gap-4 justify-center">
+<button class="bg-secondary-container hover:bg-secondary-container/90 text-white px-8 py-3 rounded-lg font-label-caps text-label-caps transition-all glow-accent">
+                        اكتشف مجموعتنا
+                    </button>
+</div>
+</div>
+</section>
+<!-- Our Story -->
+<section class="py-xl px-container-margin max-w-7xl mx-auto">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative group">
+<div class="absolute -inset-4 bg-secondary-container/10 blur-3xl opacity-0 group-hover:opacity-100 transition duration-1000"></div>
+<div class="relative aspect-square rounded-xl overflow-hidden glass-card p-1">
+<img class="w-full h-full object-cover rounded-lg" data-alt="Close-up macro photography of a high-end smartphone motherboard where the copper and gold circuits are intricately laid out in the exact geometry of traditional Palestinian Tatreez embroidery. The lighting is focused and dramatic, highlighting the metallic shimmer of the circuits against a dark olive matte background. The aesthetic is extremely detailed, clean, and technologically advanced, symbolizing cultural engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoS4MphiDMnaWZdVOITcnfvqmAdQX8ttOb91QzEagxTrWYIc-53-l7EZ4eQ4YW2blzQyMtIDiw4NkvzLfjAhsr9hdl5FpHE9KoUdSlIuNzE4mum8dshbiVPTVyP83qonOTWNEM3VSJxxYAaeZPo1EmUzaQmeZ3FsEil8VvstEWPM_rpFFYSJu_ktQmvpQJDv0On6Z_euhetIrQrj6g-07FRrKq84Oleogy6AvoUCmFiz1DMEBX4e-LmV2Yfsbo8yNBSY1cG45WCBc"/>
+</div>
+<div class="absolute bottom-4 -right-4 tatreez-pattern w-32 h-32 rounded-lg -z-10"></div>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-8 border-r-4 border-secondary-container pr-6">قصتنا: من الأرض إلى السحابة</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed">
+<p>بدأت رحلة محمد قديح من شغف عميق برؤية أنماط التطريز الفلسطينية (التطريز) لا تُعامل كقطع أثرية فحسب، بل كخوارزميات بصرية وهندسية يمكن دمجها في صميم التقنية الحديثة.</p>
+<p>في "Heritage Tech 2026"، قمنا بتحويل كل غرزة إلى خط برمجية، وكل رمز تراثي إلى لغة تصميم للهواتف والمعالجات. نحن نؤمن أن التكنولوجيا هي الوسيلة الأكثر قوة للحفاظ على التراث من الاندثار، من خلال جعلها جزءاً لا يتجزأ من حياتنا الرقمية اليومية.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Values -->
+<section class="py-xl bg-surface-container-low px-container-margin">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-white">قيمنا الأساسية</h2>
+<p class="text-on-surface-variant mt-2">المبادئ التي تقودنا نحو عام 2026</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Value 1 -->
+<div class="glass-card p-8 rounded-xl hover:translate-y-[-8px] transition-transform duration-500">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="bolt">bolt</span>
+</div>
+<h3 class="font-headline-lg text-white mb-4">الابتكار الجذري</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">نعيد اختراع المكونات التقنية لتتوافق مع فلسفتنا الجمالية، حيث تلتقي السرعة الفائقة مع التصميم المتأصل.</p>
+</div>
+<!-- Value 2 -->
+<div class="glass-card p-8 rounded-xl hover:translate-y-[-8px] transition-transform duration-500 border-t-2 border-t-secondary-container/50">
+<div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center mb-6 shadow-lg shadow-secondary-container/20">
+<span class="material-symbols-outlined text-white" data-icon="fingerprint">fingerprint</span>
+</div>
+<h3 class="font-headline-lg text-white mb-4">الأصالة الرقمية</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">كل منتج يحمل بصمة تاريخية فريدة، موثقة بتقنية البلوكشين لضمان ملكية القصة والتراث.</p>
+</div>
+<!-- Value 3 -->
+<div class="glass-card p-8 rounded-xl hover:translate-y-[-8px] transition-transform duration-500">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="eco">eco</span>
+</div>
+<h3 class="font-headline-lg text-white mb-4">الاستدامة الثقافية</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">نستخدم مواد صديقة للبيئة من أرض فلسطين لإنتاج أجهزتنا، لنبقى أوفياء للتربة التي ألهمتنا.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Integration -->
+<section class="py-xl px-container-margin max-w-7xl mx-auto overflow-hidden">
+<div class="bg-primary-container/20 rounded-3xl p-8 md:p-16 relative">
+<div class="absolute top-0 left-0 w-full h-full tatreez-pattern opacity-5"></div>
+<div class="grid md:grid-cols-2 gap-12 items-center relative z-10">
+<div>
+<h2 class="font-display-xl text-white mb-6">تكنولوجيا بقلبٍ ينبض بالانتماء</h2>
+<p class="text-on-surface-variant mb-8 text-lg">أجهزتنا ليست مجرد أدوات، بل هي تحف فنية. قمنا بدمج رموز "خيمة الكرم" و"شجرة الزيتون" في التصميم الفيزيائي للمعالجات المركزية، مع واجهات مستخدم مستوحاة من ألوان الأرض.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-secondary-container" data-icon="check_circle">check_circle</span>
+                                معالجات "Keffiyeh-Core" فائقة الذكاء
+                            </li>
+<li class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-secondary-container" data-icon="check_circle">check_circle</span>
+                                هياكل من التيتانيوم الموشى بنقوش ليزرية تراثية
+                            </li>
+<li class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-secondary-container" data-icon="check_circle">check_circle</span>
+                                نظام تشغيل HeritageOS 2026
+                            </li>
+</ul>
+</div>
+<div class="relative">
+<div class="absolute -inset-10 bg-secondary-container/20 rounded-full blur-3xl animate-pulse"></div>
+<img class="relative z-10 rounded-2xl shadow-2xl border border-white/10" data-alt="A futuristic product shot of a luxury 2026 smartphone floating in a dark, minimalist space. The back of the phone features a glowing red laser-etched pattern of the Palestinian Keffiyeh grid, which appears as if it's part of the cooling system. The phone has a deep olive glass finish with silver accents. Soft volumetric lighting highlights the sleek curves and the holographic UI icons surrounding the device." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2MYf64FcFByboPTLUR7kmDzv_uPmHhVV7eTEsizqPr90_K_8TrLZksJfNpFwJfr_UMQJMcK8VpE9BAV_2d1NfAamObONTgXh2QmjhYAnKjjV00Shy-W33tuqXdZHF94SYUFcBV2IwBfQQs27x3q5aP4sjYUI3kBigjbKELysjC2pleUWx9JZZQ-ae3EpdgqKMzZ3AsMcTxZgbvDVkBO3ba3eTq5I4gNUKjehzzp0EnhbE8Ni2TmIOciaURDSt2pDfLHWBLetuqpI"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder Section -->
+<section class="py-xl px-container-margin max-w-5xl mx-auto text-center">
+<div class="relative inline-block mb-10">
+<div class="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-secondary-container p-1 mx-auto glass-card">
+<img class="w-full h-full object-cover rounded-full" data-alt="A professional portrait of a visionary Middle Eastern tech entrepreneur in his 30s, Mohammed Qudaih. He is wearing a modern black minimalist suit and stands in a high-tech studio filled with subtle Palestinian cultural artifacts. The lighting is sophisticated, with a warm rim light and a deep olive background. He looks confident and forward-thinking into the camera, embodying the fusion of tradition and 2026 technology." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwIH7_Z5uGrgRXgonqUURzcqHBzZr7hxAnhZvuFvc_5EYXSJ6asjEOP5vzfsRtNmvGyf0xFHmxzicceg-_1dAnQNPn3RLgJwGCu4kpk4MSKaf6yenWX3x3d-Awa42trceWSWTUbWsGKBEkMnSk2--q9T-GKigL59LXYE16cAz2alEAg8q_lt8j1A_npQEL1Ycs300xlZ1FpUDCSdEp_HasWujQrpi1z6OBMM-d7rK0FI9fO1EhUrisdyxnT62ZSR_eGI77R5CI4qw"/>
+</div>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">محمد قديح</h2>
+<p class="text-secondary-container font-label-caps text-label-caps mb-6 tracking-widest">المؤسس والمدير الإبداعي</p>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto italic leading-relaxed">
+                "رؤيتي هي أن تصبح فلسطين قطباً عالمياً في صناعة التكنولوجيا الفاخرة، ليس فقط بجودة الأداء، ولكن بعمق المعنى والقصة التي نرويها من خلال كل جهاز نبتكره."
+            </p>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1a2315] w-full rounded-t-lg border-t border-white/5 font-['Space_Grotesk'] text-sm mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-black text-white mb-2 uppercase">تقنيات القدس 2026</div>
+<p class="text-gray-500 max-w-xs leading-relaxed">دمج التراث بالمستقبل. جودة تقنية عالمية بهوية أصيلة.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="text-gray-500 hover:text-red-500 transition-colors" href="#">سياسة الخصوصية</a>
+<a class="text-gray-500 hover:text-red-500 transition-colors" href="#">شروط الخدمة</a>
+<a class="text-gray-500 hover:text-red-500 transition-colors" href="#">خارطة الموقع</a>
+<a class="text-gray-500 hover:text-red-500 transition-colors" href="#">تواصل معنا</a>
+</div>
+<div class="text-gray-500">
+                © 2026 تقنيات القدس. دمج التراث بالمستقبل.
+            </div>
+</div>
+</footer>
+<!-- Bottom Nav for Mobile -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#2D3924]/90 backdrop-blur-xl border-t border-white/10 flex justify-around items-center py-3">
+<a class="flex flex-col items-center gap-1 text-gray-400" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px]">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-400" href="#">
+<span class="material-symbols-outlined" data-icon="store">store</span>
+<span class="text-[10px]">المتجر</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-red-500" href="#">
+<span class="material-symbols-outlined" data-icon="info" data-weight="fill" style="font-variation-settings: 'FILL' 1;">info</span>
+<span class="text-[10px]">عن المتجر</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-400" href="#">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+<span class="text-[10px]">الدعم</span>
+</a>
+</nav>
+</body></html>
